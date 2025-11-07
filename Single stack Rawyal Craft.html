@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Raw-yal Craft - Premium handmade leather, interior design, art, and creative craftsmanship. Join our community and experience design with a royal touch." />
+  <meta name="keywords" content="Raw-yal Craft, handmade crafts, leather furniture, interior design, art, craftsmanship, South Africa, creative design" />
+  <meta name="author" content="Raw-yal Craft" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:title" content="Raw-yal Craft | Handmade Leather & Art" />
+  <meta property="og:description" content="Explore fine craftsmanship and join the Royal Craft community today!" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://your-domain-name.com" />
+  <meta property="og:image" content="https://your-domain-name.com/preview.jpg" />
+
+  <title>Raw-yal Craft | Handmade Leather & Art</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  <style>
+    /* ===== GENERAL STYLE ===== */
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f5f5;
+      color: #222;
+      margin: 0;
+      animation: colorCycle 12s infinite alternate;
+      transition: background 1s, color 1s;
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.85);
+      color: gold;
+      text-align: center;
+      padding: 1.5em 0;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      margin: 0 12px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: gold;
+    }
+
+    .active {
+      text-decoration: underline;
+      color: gold;
+    }
+
+    main {
+      padding: 30px;
+      text-align: center;
+      min-height: 70vh;
+    }
+
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+    }
+
+    button {
+      padding: 10px 20px;
+      background: gold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: red;
+      color: white;
+    }
+
+    section {
+      display: none;
+      animation: fadeIn 0.8s ease-in-out;
+    }
+
+    section.active {
+      display: block;
+    }
+
+    /* ===== GALLERY ===== */
+    #gallery-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    #gallery-container img {
+      width: 220px;
+      height: 160px;
+      object-fit: cover;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      transition: transform 0.3s;
+    }
+
+    #gallery-container img:hover {
+      transform: scale(1.05);
+    }
+
+    /* ===== ANIMATIONS ===== */
+    @keyframes colorCycle {
+      0% { color: red; }
+      50% { color: gold; }
+      100% { color: green; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    /* ===== FORMS ===== */
+    input[type="text"], input[type="email"], input[type="file"] {
+      padding: 10px;
+      margin: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    #membership-message {
+      color: green;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      nav a {
+        display: inline-block;
+        margin: 5px;
+      }
+      #gallery-container img {
+        width: 100%;
+        max-width: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Raw-yal Craft</h1>
+    <nav>
+      <a href="#" onclick="showPage('home', event)" class="active">Home</a>
+      <a href="#" onclick="showPage('about', event)">About</a>
+      <a href="#" onclick="showPage('services', event)">Services</a>
+      <a href="#" onclick="showPage('gallery', event)">Gallery</a>
+      <a href="#" onclick="showPage('membership', event)">Membership</a>
+      <a href="#" onclick="showPage('contact', event)">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===== HOME ===== -->
+    <section id="home" class="active">
+      <h2>Welcome to Raw-yal Craft</h2>
+      <p>Experience the perfect blend of design, art, and craftsmanship. At Royal Craft, we transform creativity into timeless beauty.</p>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about">
+      <h2>About Raw-yal Craft</h2>
+      <p>Royal Craft is a hub of creativity and precision. We specialize in crafting fine leather products, elegant interiors, and artistic designs. Every creation is made with heart, quality, and passion.</p>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section id="services">
+      <h2>Our Services</h2>
+      <p>We offer a range of creative and professional services including:</p>
+      <ul style="list-style:none; padding:0;">
+        <li>🛋️ Leather & Couches</li>
+        <li>🏠 Interior Design</li>
+        <li>🔧 Refurbishment</li>
+        <li>👜 Leather Bags</li>
+        <li>🎨 Painting & Craft Works</li>
+        <li>🌿 Landscaping</li>
+      </ul>
+    </section>
+
+    <!-- ===== GALLERY ===== -->
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <p>Explore our creative masterpieces below.</p>
+      <div id="gallery-container"></div>
+      <br>
+      <input type="file" id="upload" accept="image/*">
+      <button onclick="uploadImage()">Upload Image</button>
+    </section>
+
+    <!-- ===== MEMBERSHIP ===== -->
+    <section id="membership">
+      <h2>Royal Craft Membership</h2>
+      <p>Become part of the Raw-yal Craft family. Get exclusive offers and updates on our discounts and designs.</p>
+      <form id="membership-form">
+        <input type="text" placeholder="Your Name" required><br>
+        <input type="email" placeholder="Your Email" required><br>
+        <button type="submit">Join Now</button>
+      </form>
+      <div id="membership-message"></div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>We’d love to hear from you!</p>
+      <p>📞 Call or WhatsApp: <strong>072 960 0404</strong></p>
+      <p>📧 Email: <strong>info@raw-yalcraft.co.za</strong></p>
+      <p>📍 Location: South Africa</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Royal Craft | Designed with ❤️ and Creativity</p>
+  </footer>
+
+  <script>
+    // ===== PAGE SWITCHING =====
+    function showPage(pageId, event) {
+      event.preventDefault();
+      document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
+      document.getElementById(pageId).classList.add('active');
+      document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
+      event.target.classList.add('active');
+    }
+
+    // ===== IMAGE UPLOAD =====
+    function uploadImage() {
+      const upload = document.getElementById('upload');
+      const container = document.getElementById('gallery-container');
+      const file = upload.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = e => {
+          const img = document.createElement('img');
+          img.src = e.target.result;
+          container.appendChild(img);
+        };
+        reader.readAsDataURL(file);
+      } else {
+        alert("Please select an image first.");
+      }
+    }
+
+    // ===== MEMBERSHIP FORM =====
+    document.addEventListener('DOMContentLoaded', () => {
+      const form = document.getElementById('membership-form');
+      if (form) {
+        form.addEventListener('submit', e => {
+          e.preventDefault();
+          document.getElementById('membership-message').innerText =
+            "🎉 Thank you for joining Royal Craft! Check your email for confirmation.";
+          form.reset();
+        });
+      }
+    });
+  </script>
+</body>
+</html>
